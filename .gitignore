@@ -1,0 +1,10 @@
+# Notes internes non destinées au dépôt (ex. plan directeur, brouillons de réunion)
+interne/
+*.draft.md
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Exports temporaires
+*.tmp
