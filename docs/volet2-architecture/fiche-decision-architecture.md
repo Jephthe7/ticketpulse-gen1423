@@ -1,6 +1,9 @@
 # Fiche de décision — Architecture
 
-*Base de discussion pour la réunion du 5 août. Proposition à valider/ajuster en équipe, rien n'est tranché.*
+## Statut du document
+
+Document préparatoire utilisé lors de la réunion d'architecture du 5 août 2026.
+Il présente les options étudiées et les critères de comparaison. La décision finale sera documentée séparément après validation de l'équipe.
 
 ## Option A — Monolithe modulaire
 Un seul système, séparé en modules internes (recherche, réservation, paiement, utilisateurs), déployé comme une seule application.
