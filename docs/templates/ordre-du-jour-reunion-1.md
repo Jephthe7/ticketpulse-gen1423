@@ -17,17 +17,26 @@ Voir `plan_directeur_interne.md`, Phase 1. Passer chaque question une à une, no
 7. Taille moyenne d'une requête/réponse API
 8. Budget de disponibilité visé (ex. 99.9%)
 
-## 3. Répartition provisoire des responsabilités (10 min)
-- Fedjo : coordination + Volet 2 (co-lead)
-- Kadanga (Eyadèma Ezékiel) : Volet 3 (lead)
-- Sanon (Djelia) : Volet 2 (lead)
-*(à ajuster selon les forces/préférences réelles de chacun — proposition de départ, pas figée)*
+## 3. Répartition des responsabilités — validée en réunion
+- Fedjo : Volet 1 (responsable) + Volet 2 (co-responsable)
+- Ezekiel : Volet 2 (responsable)
+- Djelia : Volet 3 (responsable) + Volet 2 (co-responsable)
 
-## 4. Décisions à obtenir avant la fin de la réunion
-- [ ] Les 8 hypothèses de la Phase 1 sont tranchées et notées
-- [ ] Chacun sait ce qu'il fait demain matin
-- [ ] Date/heure du point quotidien de 1h confirmée
-- [ ] Accès Jira et Git confirmés pour les 3 membres
+## 4. Décisions obtenues en fin de réunion
+- [x] Les 8 hypothèses de conception sont tranchées et notées (voir `docs/volet2-architecture/hypotheses.md`)
+- [x] Répartition des responsabilités confirmée
+- [x] Point quotidien fixé à 1h/jour
+- [x] Accès Jira et Git confirmés pour les 3 membres
 
 ## 5. Prochaine réunion
-Date, objectif (normalement : Jalon 2 — comparaison architecturale).
+5 août — Jalon 2 : comparaison architecturale et choix retenu.
+
+## Statut
+
+Réunion réalisée le 4 août 2026.
+
+Les hypothèses validées sont documentées dans :
+docs/volet2-architecture/hypotheses.md
+
+Le compte rendu est disponible dans :
+docs/volet1-agile/compte-rendu-reunion-1.md

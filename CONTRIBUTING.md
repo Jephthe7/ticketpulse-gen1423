@@ -23,9 +23,9 @@ Avant de fermer un ticket Jira en "Done", un autre membre que l'auteur doit :
 
 | Situation | Réponse concrète |
 |---|---|
-| Kadanga (Eyadèma Ezékiel) indisponible 1-3 jours | Sanon (Djelia) reprend en priorité le Volet 3 (ses tickets), Fedjo absorbe le reste si besoin. Annonce attendue la veille dans le chat d'équipe. |
-| Sanon (Djelia) indisponible 1-3 jours | Fedjo reprend le Volet 2 en priorité (déjà co-impliqué dessus), Kadanga prend le relais sur les diagrammes si nécessaire. |
-| Fedjo indisponible 1-3 jours | Le point quotidien de 1h est maintenu par les deux autres ; les décisions urgentes se documentent dans le journal des décisions pour validation asynchrone à son retour. |
+| Ezekiel indisponible 1-3 jours | Djelia et Fedjo se répartissent le Volet 2 (déjà co-responsables tous les deux). |
+| Djelia indisponible 1-3 jours | Fedjo reprend le Volet 3 en priorité ; Ezekiel absorbe temporairement le reste du Volet 2. |
+| Fedjo indisponible 1-3 jours | Le Volet 1 est repris par les deux autres à tour de rôle ; les décisions urgentes se documentent pour validation asynchrone à son retour. |
 | Une tâche prend plus de temps que prévu | Elle reste ouverte, on ne bloque pas les tâches qui n'en dépendent pas ; le retard est documenté en commentaire Jira, pas caché. |
 | Retard global constaté au point du 7 août | On coupe d'abord dans le Volet 3 (15% du barème, le plus compressible) avant de toucher au Volet 2 (35%) ou à la qualité du rapport. Voir section Volet 3 du plan directeur pour le scope minimal. |
 | GitHub inaccessible (panne, blocage réseau) | Travail continue en local, commits en attente, push dès le retour d'accès — ne jamais perdre de travail en attendant que GitHub revienne. |
