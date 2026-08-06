@@ -3,7 +3,7 @@
 *Mis à jour à chaque point d'équipe. Permet à n'importe qui d'ouvrir le dépôt et de voir instantanément où en est le projet.*
 
 ## Volet 1
-- [ ] Repo Git créé, équipe invitée
+- [x] Repo Git créé, équipe invitée
 - [ ] Jira créé (Epics + colonnes)
 - [ ] Sprint 1 lancé
 - [ ] Sprint 1 clos (review + retro)
@@ -12,10 +12,10 @@
 - [ ] Registre des risques (8 minimum)
 
 ## Volet 2
-- [ ] 8 hypothèses tranchées
+- [x] 8 hypothèses tranchées
 - [ ] Diagramme de cas d'utilisation
 - [ ] Diagrammes de séquence (x2)
-- [ ] Comparaison architecturale + choix justifié
+- [x] Comparaison architecturale + choix justifié
 - [ ] Dimensionnement (QPS/MPS/volume/latence)
 - [ ] Stratégie de données
 - [ ] Diagramme d'architecture globale
