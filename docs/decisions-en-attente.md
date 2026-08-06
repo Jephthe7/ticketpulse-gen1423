@@ -4,6 +4,6 @@
 
 | Sujet | Question | Décision prévue pour | Responsable |
 |---|---|---|---|
-| Hypothèses de charge | Voir `propositions-initiales-equipe.md`, proposition 1 | Réunion 1 (4 août) | Équipe entière |
-| Stockage des données | Quelle technologie pour l'inventaire de sièges (cohérence forte requise) ? | Jalon 3 (6-7 août) | Équipe entière |
-| Répartition finale des rôles | Confirmée ou ajustée après réunion 1 | Réunion 1 | Équipe entière |
+| Stockage des données | Quelle technologie pour l'inventaire de sièges (cohérence forte requise) ? | 7 août | Ezekiel |
+| Analyse des besoins/parties prenantes | Document dédié pas encore rédigé | 7 août | Djelia |
+| Dimensionnement | QPS/MPS/volume/latence | 7 août | Ezekiel |
