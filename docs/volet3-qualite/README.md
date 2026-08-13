@@ -1,9 +1,13 @@
 # Volet 3 — Validation de la qualité
 
-À déposer ici :
-- Plan de tests et scénarios d'acceptation
-- Plan de validation de la performance et seuils
-- Analyse de sécurité (menaces + contrôles)
-- Stratégie d'observabilité
-- Scénarios de panne et plan de reprise
-- Plan de maintenance et feuille de route d'évolution
+Ce dossier contient les versions canoniques des livrables de qualité :
+
+- `plan-tests-acceptation.md` ;
+- `validation-performance.md` ;
+- `analyse-securite.md` ;
+- `strategie-observabilite.md` ;
+- `plan-reprise.md` ;
+- `plan-maintenance-evolution.md`.
+
+Les DOCX/PDF originaux de Djelia sont conservés dans `sources/` pour préserver la traçabilité de sa contribution. Ils ne constituent plus l'organisation principale du dépôt.
+

@@ -1,10 +1,15 @@
-# Volet 2 — Analyse, conception logicielle et architecture système
+# Volet 2 — Analyse, conception et architecture
 
-À déposer ici :
-- Analyse des besoins (parties prenantes, exigences, hypothèses justifiées)
-- Diagrammes (cas d'utilisation, séquence, architecture) → sous diagrammes/
-- Comparaison des styles architecturaux et choix justifié
-- Calculs de dimensionnement (QPS, MPS, volume, latence)
-- Stratégie de données
-- Tableau des décisions architecturales et des compromis
-- Exports Figma → sous figma/
+Documents canoniques :
+
+- `analyse-besoins.md` : parties prenantes, exigences et contraintes ;
+- `hypotheses.md` : hypothèses quantitatives partagées ;
+- `ADR-001-choix-architecture.md` : décision architecturale ;
+- `architecture-retenue.md` : composants et interactions ;
+- `dimensionnement.md` : calculs et limites ;
+- `strategie-donnees.md` : stockage, cohérence et reprise ;
+- `journal-decisions.md` et `compromis.md` : décisions et compromis ;
+- `matrice-tracabilite.md` : liens entre exigences, Jira, architecture et tests ;
+- `diagrammes/` : sources et exports ;
+- `maquettes/` : futurs exports Figma.
+

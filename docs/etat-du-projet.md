@@ -1,40 +1,29 @@
-# État du projet — à cocher à chaque réunion
+# État du projet — 12 août 2026
 
-*Mis à jour à chaque point d'équipe. Permet à n'importe qui d'ouvrir le dépôt et de voir instantanément où en est le projet.*
+## Terminé
 
-## Volet 1
-- [x] Repo Git créé, équipe invitée
-- [ ] Jira créé (Epics + colonnes)
-- [ ] Sprint 1 lancé
-- [ ] Sprint 1 clos (review + retro)
-- [ ] Sprint 2 lancé
-- [ ] Sprint 2 clos
-- [ ] Registre des risques (8 minimum)
+- [x] Dépôt GitHub et branches individuelles
+- [x] Projet Jira avec trois epics
+- [x] Simulation de deux Sprints
+- [x] Registre de huit risques
+- [x] Analyse des besoins et parties prenantes
+- [x] Hypothèses de conception
+- [x] Comparaison et choix architectural
+- [x] Dimensionnement analytique
+- [x] Stratégie de données
+- [x] Diagrammes sources de cas d'utilisation, architecture et séquences
+- [x] Plans de tests, sécurité, observabilité, reprise et maintenance
 
-## Volet 2
-- [x] 8 hypothèses tranchées
-- [ ] Diagramme de cas d'utilisation
-- [ ] Diagrammes de séquence (x2)
-- [x] Comparaison architecturale + choix justifié
-- [ ] Dimensionnement (QPS/MPS/volume/latence)
-- [ ] Stratégie de données
-- [ ] Diagramme d'architecture globale
-- [ ] Maquettes Figma (3-4 écrans)
-- [ ] Tableau des décisions
-- [ ] Tableau des compromis
+## En consolidation
 
-## Volet 3
-- [ ] Plan de tests
-- [ ] Analyse de sécurité
-- [ ] Observabilité
-- [ ] Plan de maintenance/évolution
-- [ ] Scénarios de panne
+- [ ] Exports Figma haute fidélité (3–4 écrans)
+- [ ] Exports finaux des diagrammes avec fond clair
+- [ ] Capture de clôture du Sprint 2
+- [ ] Rapport final mis en page
+- [ ] Présentation finale
+- [ ] Relecture croisée et dépôt Moodle
 
-## Rapport et présentation
-- [ ] Squelette rempli section par section
-- [ ] Gel du contenu (11 août soir)
-- [ ] Relecture croisée (12 août)
-- [ ] Répétition orale
-- [ ] Dépôt Moodle effectué
+## Limite de processus assumée
 
-*(Légende : coché = terminé et relu par au moins 2 membres, pas juste "commencé")*
+Le Sprint 1 n'a pas été officiellement démarré dans Jira. L'équipe a corrigé sa pratique pour le Sprint 2 en ajoutant objectif, dates, estimations, priorités et suivi des états. Cette progression est documentée dans le rapport plutôt que dissimulée.
+
