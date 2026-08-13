@@ -1,0 +1,47 @@
+DIAPOSITIVE 1
+WILFRIED — 35 s
+Bonjour. Nous sommes le groupe 3. TicketPulse est notre proposition de conception pour une plateforme de billetterie capable de résister aux ventes flash sans jamais vendre deux fois le même siège.
+
+DIAPOSITIVE 2
+WILFRIED — 50 s
+Le défi vient de la concentration de la demande : jusqu’à 250 000 personnes et 50 000 requêtes par seconde pendant dix minutes. La priorité absolue est zéro double-vente. Le paiement doit aussi se terminer en moins de cinq minutes.
+
+DIAPOSITIVE 3
+DJELIA — 50 s
+Le parcours couvre la recherche, la sélection des sièges, le paiement et la confirmation avec QR. La fenêtre de paiement est inférieure à cinq minutes. Ces maquettes représentent le comportement visé; elles ne prétendent pas démontrer une intégration déjà déployée.
+
+DIAPOSITIVE 4
+DJELIA — 55 s
+Le parcours fonctionnel va de la recherche au billet QR. Les qualités attendues sont la disponibilité, la rapidité, la sécurité et la reprise. Une lecture peut être légèrement obsolète dans le cache, mais toute confirmation doit utiliser l’état transactionnel réel.
+
+DIAPOSITIVE 5
+EZÉKIEL — 60 s
+Nous avons comparé deux styles. L’orienté événements favorise le découplage, mais ajoute une cohérence distribuée et une exploitation plus complexes. Pour trois personnes et un délai court, le monolithe modulaire présente un meilleur rapport bénéfice-complexité.
+
+DIAPOSITIVE 6
+EZÉKIEL — 70 s
+Les instances sont sans état derrière un répartiteur. Les modules restent séparés dans le code. La base relationnelle est la source de vérité et le cache ne confirme jamais une vente. Si les mesures révèlent un goulot, un module pourra être extrait.
+
+DIAPOSITIVE 7
+EZÉKIEL — 60 s
+Le siège passe de AVAILABLE à HELD puis SOLD. La transition est atomique et protégée par verrou ou mise à jour conditionnelle. Une expiration ou un paiement refusé libère le siège. Le cache ne décide jamais de la vente.
+
+DIAPOSITIVE 8
+EZÉKIEL — 65 s
+Au pic, nous estimons 45 000 lectures et 5 000 écritures API par seconde, pour environ 2,8 Gbit/s de trafic utile. Avec l’hypothèse de 1 000 requêtes par seconde par instance, il faudrait 50 instances, ou 65 avec marge. Seule une campagne de charge peut confirmer cette capacité.
+
+DIAPOSITIVE 9
+DJELIA — 70 s
+La validation couvre charge normale, pic, contention, stress, endurance et perte d’une instance. Les objectifs proposés sont p95 sous deux secondes et moins de 1 % d’erreurs, mais l’invariant principal reste zéro surréservation. La sécurité repose sur un PSP externe, TLS et l’idempotence. Métriques, logs et traces permettent d’expliquer tout échec.
+
+DIAPOSITIVE 10
+WILFRIED — 65 s
+Jira structure le travail en trois epics et deux Sprints simulés. GitHub conserve branches, Pull Requests et revues. Nous assumons notre limite : le Sprint 1 n’a pas été officiellement démarré. La pratique a été corrigée au Sprint 2 avec dates, objectif, estimations et suivi.
+
+DIAPOSITIVE 11
+WILFRIED — 45 s
+J’ai assuré la coordination et l’intégration. Ezékiel a porté l’architecture et le dimensionnement. Djelia a porté les besoins et la qualité. Les responsabilités étaient principales, pas exclusives : les décisions structurantes ont été discutées et revues collectivement.
+
+DIAPOSITIVE 12
+WILFRIED — 30 s
+En conclusion, TicketPulse protège d’abord la cohérence de la réservation, tout en permettant la montée en charge des lectures. Notre proposition reste simple à exploiter aujourd’hui et évolutive demain. Nous sommes prêts à répondre à vos questions.
