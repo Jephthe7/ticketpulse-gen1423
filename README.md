@@ -1,148 +1,34 @@
-# TicketPulse — GEN1423 Génie Logiciel — Groupe 3
+# TicketPulse — GEN1423 Génie logiciel — Groupe 3
 
-## Présentation du projet
-
-TicketPulse est une plateforme de billetterie d'événements en temps réel (Sujet A) conçue pour répondre aux défis liés aux ventes à forte demande.
-
-Le système doit notamment permettre de gérer :
-- un nombre élevé d'utilisateurs simultanés ;
-- des réservations concurrentes ;
-- des transactions sécurisées ;
-- une disponibilité élevée du service.
-
-Ce dépôt contient l'ensemble des documents produits par l'équipe dans le cadre du projet : analyses, décisions architecturales, documents de qualité et rapport final.
-
----
+TicketPulse est une proposition d'architecture pour une plateforme de billetterie devant demeurer disponible pendant des ventes flash, traiter jusqu'à 250 000 utilisateurs simultanés et 50 000 requêtes par seconde, et empêcher toute double-vente de siège.
 
 ## Équipe
 
-### Fedjo Tejioleng, Wilfried Jephthé
-Responsabilités principales :
-- Coordination générale du projet ;
-- Suivi Agile (Git, Jira, organisation des tâches) ;
-- Intégration et cohérence des livrables ;
-- Contribution aux décisions architecturales.
+- **Wilfried Jephthé Fedjo Tejioleng** — coordination, pilotage Agile, intégration et cohérence globale.
+- **Eyadèma Ezékiel Kadanga** — architecture, dimensionnement et stratégie de données.
+- **Djelia Hanifah Sanon** — analyse des besoins, qualité, tests, sécurité, observabilité et reprise.
 
-### Kadanga, Eyadèma Ezékiel
-Responsabilités principales :
-- Analyse architecturale ;
-- Comparaison des solutions techniques ;
-- Dimensionnement et conception du système.
+Les responsabilités principales facilitent la coordination ; les décisions structurantes et les revues sont collectives.
 
-### Sanon, Djelia Hanifah
-Responsabilités principales :
-- Qualité du système ;
-- Tests ;
-- Sécurité ;
-- Maintenance et évolution.
+## Organisation
 
-Les décisions structurantes (architecture, hypothèses importantes, compromis techniques) sont prises collectivement par l'équipe.
-
----
-
-## Contexte académique
-
-Projet réalisé dans le cadre du cours GEN1423 — Génie logiciel à l'Université du Québec en Outaouais (UQO).
-
-Enseignant : Abderrahmane Ben Mimoune
-
-Dates importantes :
-- Remise finale : 12 août 2026 à 23h59
-- Présentation : 13 août 2026
-
----
-
-## Organisation du dépôt
-
-```
-ticketpulse-gen1423/
-├── docs/
-│   ├── volet1-agile/
-│   │   → Organisation et suivi du projet :
-│   │      comptes rendus de réunions, suivi Agile,
-│   │      gestion des risques, preuves Git/Jira
-│   │
-│   ├── volet2-architecture/
-│   │   → Conception technique du système :
-│   │      hypothèses de conception, décisions architecturales,
-│   │      dimensionnement, diagrammes, compromis techniques
-│   │
-│   ├── volet3-qualite/
-│   │   → Assurance qualité :
-│   │      stratégie de tests, sécurité, observabilité, maintenance
-│   │
-│   ├── templates/
-│   │   → Modèles utilisés pour uniformiser la documentation du projet
-│   │
-│   ├── etat-du-projet.md
-│   │   → Tableau de suivi de l'avancement global
-│   │
-│   └── decisions-en-attente.md
-│       → Décisions importantes restant à trancher
-│
-├── rapport-final/
-│   → Construction progressive du rapport final remis sur Moodle
-│
-├── references/
-│   → Sources utilisées : énoncé, notes de cours, références techniques
-│
-├── CONTRIBUTING.md
-│   → Règles de collaboration Git et organisation du travail
-│
-└── README.md
-    → Point d'entrée du projet
+```text
+docs/
+├── volet1-agile/        # Jira, Git, risques, réunions et preuves
+├── volet2-architecture/ # besoins, hypothèses, décisions, calculs et diagrammes
+└── volet3-qualite/      # tests, performance, sécurité, observabilité et reprise
+rapport-final/           # rapport consolidé
+presentation/            # support de présentation orale
+references/              # énoncé et bibliographie
 ```
 
----
+Le classement est effectué par livrable et non par membre. Les sources DOCX/PDF conservées dans `docs/volet3-qualite/sources/` assurent la traçabilité des contributions déjà fusionnées.
 
-## Outils utilisés
+## Architecture retenue
 
-### Git / GitHub
-Utilisés pour :
-- gérer les versions des documents ;
-- conserver l'historique des contributions ;
-- faciliter la collaboration entre les membres.
+L'équipe retient un monolithe modulaire répliqué en instances sans état derrière un répartiteur de charge. Une base relationnelle transactionnelle demeure la source de vérité pour les réservations. Le cache accélère uniquement les lectures et ne peut jamais confirmer une vente.
 
-### Jira
-Utilisé pour :
-- organiser le backlog ;
-- suivre les tâches ;
-- gérer les deux sprints du projet.
+## État de la remise
 
-### Figma
-Utilisé pour :
-- concevoir les maquettes haute fidélité ;
-- représenter le parcours utilisateur.
+Les volets documentaires sont consolidés. Les maquettes Figma sont encore en production et devront être déposées dans `docs/volet2-architecture/maquettes/` avant le gel final du contenu.
 
----
-
-## Organisation Git
-
-### Branches
-- `main` : branche principale contenant uniquement les versions validées.
-- Une branche individuelle par membre pour le travail en cours.
-
-Branches actuelles :
-- `fedjo-dev`
-- `ezekiel-dev`
-- `djelia-dev`
-
-Les modifications importantes sont intégrées après validation.
-
----
-
-## Convention de commits
-
-Format :
-```
-<volet>: <action réalisée>
-```
-
-Exemples :
-```
-volet2: ajout comparaison architectures
-volet3: ajout scénarios de tests
-rapport: correction structure finale
-```
-
-Les commits doivent représenter des avancées réelles et documenter l'évolution du projet.
