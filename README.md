@@ -15,10 +15,10 @@ Les responsabilités principales facilitent la coordination ; les décisions str
 ```text
 docs/
 ├── volet1-agile/        # Jira, Git, risques, réunions et preuves
-├── volet2-architecture/ # besoins, hypothèses, décisions, calculs et diagrammes
+├── volet2-architecture/ # besoins, hypothèses, décisions, calculs, diagrammes et maquettes
 └── volet3-qualite/      # tests, performance, sécurité, observabilité et reprise
-rapport-final/           # rapport consolidé
-presentation/            # support de présentation orale
+rapport-final/           # rapport final en PDF
+presentation/            # PowerPoint final et script oral
 references/              # énoncé et bibliographie
 ```
 
@@ -28,7 +28,11 @@ Le classement est effectué par livrable et non par membre. Les sources DOCX/PDF
 
 L'équipe retient un monolithe modulaire répliqué en instances sans état derrière un répartiteur de charge. Une base relationnelle transactionnelle demeure la source de vérité pour les réservations. Le cache accélère uniquement les lectures et ne peut jamais confirmer une vente.
 
-## État de la remise
+## Livrables finaux
 
-Les volets documentaires sont consolidés. Les maquettes Figma sont encore en production et devront être déposées dans `docs/volet2-architecture/maquettes/` avant le gel final du contenu.
+- [Rapport final](rapport-final/TicketPulse_Rapport_final_Groupe_3.pdf)
+- [Présentation finale](presentation/TicketPulse_Presentation_finale_Groupe_3.pptx)
+- [Script oral](presentation/Script_oral_TicketPulse_Groupe_3.txt)
+- [État final du projet](docs/etat-du-projet.md)
 
+Les quatre maquettes haute fidélité et les preuves Jira/GitHub sont intégrées dans les dossiers correspondants sous `docs/`.

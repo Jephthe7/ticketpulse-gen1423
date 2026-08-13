@@ -1,13 +1,10 @@
-# Maquettes Figma — en cours
+# Maquettes haute fidélité — TicketPulse
 
-Les 3–4 écrans haute fidélité sont encore en production par l'équipe.
+Ce dossier contient les quatre écrans retenus pour représenter le parcours principal :
 
-Avant la remise, déposer ici :
+1. `01-accueil-recherche-evenements.png` — recherche et consultation des événements ;
+2. `02-selection-sieges.png` — plan de salle et sélection des sièges ;
+3. `03-paiement.png` — récapitulatif et paiement dans une fenêtre inférieure à cinq minutes ;
+4. `04-confirmation-billet-qr.png` — confirmation de la réservation et billet avec QR Code.
 
-1. recherche et liste des événements ;
-2. plan de salle et sélection d'un siège ;
-3. paiement et récapitulatif ;
-4. confirmation et billet avec QR Code, si disponible.
-
-Format recommandé : PNG haute résolution avec un nom descriptif, accompagné du lien de consultation du prototype dans `LIEN_FIGMA.txt`.
-
+Les maquettes constituent une représentation haute fidélité du comportement visé. Elles ne démontrent pas une intégration applicative ou un paiement réellement déployé.
